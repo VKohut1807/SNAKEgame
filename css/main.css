@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  background: url(../img/background.jpg) no-repeat center center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15.5em 0 0 -18em;
+}
+.container header h1 {
+  padding: 0.1em auto;
+}
+.container main {
+  width: 37.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .block:first-child {
+  height: 25em;
+  background: red;
+}
+.container main .block:first-child #area-field {
+  width: 325px;
+  background: blue;
+}
+.container main .text-field {
+  width: 15em;
+  margin: 0 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.container main .text-field .run {
+  height: 5em;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
+  background-size: contain;
+  cursor: pointer;
+  border-radius: 1em;
+}
+.container main .text-field .run:hover {
+  background-color: greenyellow;
+}
+.container main .text-field .rule {
+  margin: 1em auto;
+  color: #000;
+  padding: 0.5em;
+  border: 2px solid;
+  border-radius: 1em;
+  border-color: #F0F0F0 #9C9C9C #9C9C9C #F0F0F0;
+  background: #F0F0F0;
+}
+.container main .text-field .score-field {
+  margin: 1em auto;
+  padding: 1em 2em;
+  border: 2px solid;
+  border-radius: 1em;
+  border-color: #F0F0F0 #9C9C9C #9C9C9C #F0F0F0;
+  background: #F0F0F0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal .modal-text {
+  background: #fefefe;
+  margin: 25% auto;
+  padding: 20px;
+  border: 1px solid;
+  border-color: #F0F0F0 #9C9C9C #9C9C9C #F0F0F0;
+  border-radius: 1em;
+  width: 25%;
+}
+
+/*# sourceMappingURL=main.css.map */
