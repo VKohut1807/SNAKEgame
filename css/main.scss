@@ -32,13 +32,40 @@ body {
         display: flex;
         justify-content: space-between;
     
-        .block:first-child {
+        .field {
+            width: 325px;
             height: 25em;
-            background: red;
 
-            #area-field {
-                width: 325px;
-                background: blue;
+            .cell{
+                width: 10.5px;
+                height: 10.5px;
+                border-radius: 1em;
+                float: left;
+                border: 1px solid #C1CCCA;
+            }
+
+            .snakeBody{
+                width: 12.5px;
+                height: 12.5px;
+                background: #000;
+                border-radius: 100%;
+                border: none;
+            }
+            
+            .head{
+                width: 12.5px;
+                height: 12.5px;
+                background: #0C64C8;
+                border-radius: 100%;
+                border: none;
+            }
+
+            .mouse{
+                width: 12.5px;
+                height: 12.5px;
+                background: #94E202;
+                border-radius: 100%;
+                border: none;
             }
         }
 
@@ -79,6 +106,10 @@ body {
                 border-radius: 1em;
                 border-color: #F0F0F0 #9C9C9C #9C9C9C #F0F0F0;
                 background: #F0F0F0;
+
+                input{
+                    text-align: center;
+                }
             }
         }
     }
