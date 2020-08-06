@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png"/>
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <script src="js/snakeGame.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <title>Snake</title>
 </head>
 <body>
@@ -16,9 +17,7 @@
         <h1 class="text-center text-upper">Snake</h1>
     </header>
     <main>
-        <div class="block">
-            <div id="area-field"></div>
-        </div>
+        <div id="area-field" class="block"></div>
         <div class="block">
             <div class="text-field">
                 <button id="run" class="run text-upper">СТАРТ</button>
@@ -29,7 +28,9 @@
                     </ul>
                 </div>
                 <div class="score-field text-center">бали
-                    <div id="score">0</div>
+                    <div id="score">
+                        <input id="input" type="text" disabled = "true">
+                    </div>
                 </div>
             </div>
         </div>

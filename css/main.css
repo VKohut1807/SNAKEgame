@@ -36,13 +36,37 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.container main .block:first-child {
-  height: 25em;
-  background: red;
-}
-.container main .block:first-child #area-field {
+.container main .field {
   width: 325px;
-  background: blue;
+  height: 25em;
+}
+.container main .field .cell {
+  width: 10.5px;
+  height: 10.5px;
+  border-radius: 1em;
+  float: left;
+  border: 1px solid #C1CCCA;
+}
+.container main .field .snakeBody {
+  width: 12.5px;
+  height: 12.5px;
+  background: #000;
+  border-radius: 100%;
+  border: none;
+}
+.container main .field .head {
+  width: 12.5px;
+  height: 12.5px;
+  background: #0C64C8;
+  border-radius: 100%;
+  border: none;
+}
+.container main .field .mouse {
+  width: 12.5px;
+  height: 12.5px;
+  background: #94E202;
+  border-radius: 100%;
+  border: none;
 }
 .container main .text-field {
   width: 15em;
@@ -78,6 +102,9 @@ body {
   border-radius: 1em;
   border-color: #F0F0F0 #9C9C9C #9C9C9C #F0F0F0;
   background: #F0F0F0;
+}
+.container main .text-field .score-field input {
+  text-align: center;
 }
 
 .modal {
